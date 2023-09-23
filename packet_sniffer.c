@@ -59,7 +59,7 @@ int main() {
     char errbuf[PCAP_ERRBUF_SIZE];
     pcap_t *handle;
     
-    const char *dev = "eth0"; // 네트워크 인터페이스 이름을 적절하게 수정
+    const char *dev = "ens33"; // vmware ubuntu 네트워크 인터페이스
     
     // 지정된 네트워크 인터페이스로부터 패킷을 캡처하기 위한 핸들 생성
     handle = pcap_open_live(dev, BUFSIZ, 1, 1000, errbuf);
